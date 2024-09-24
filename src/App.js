@@ -234,7 +234,7 @@ function App() {
                   value={geninp}
                   className="geninput"
                   type="text"
-                  onChange={() => setgeninp(event.target.value)}
+                  onChange={(event) => setgeninp(event.target.value)}
                 />
                 <button
                   className="delgenarr"

@@ -1,0 +1,368 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+
+.App {
+  
+  height: 100%;
+  width: 100%;
+  padding-right: 0.3%;
+  /* border: 2px red solid; */
+
+
+  text-align: center;
+
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-weight: 500 ;
+  
+  background-image: url("tex1.jpg");
+  /* background: url(./backg.webp) no-repeat ; */
+    background-color: rgba(246, 172, 172, 0.7);
+     /* White overlay with 50% transparency */
+      background-blend-mode: overlay;    
+      background-size:cover;
+
+  /* .App-header {
+    background-color: #282c34;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
+  } */
+  
+  .navbar {
+    /* border:5px red solid; */
+
+    z-index: 100;
+    position:sticky;
+    top: 0;
+    background-color: rgb(226, 248, 116);
+    border-radius: 20px;
+    box-shadow: 10px 10px 20px rgb(227, 228, 232);
+    /* padding-bottom: 20px; */
+    margin-top: 1%;
+    margin-bottom: 3%;
+    font-size: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 17vh;
+    
+    .heading {
+      border: 5px red solidy;
+      font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+      sans-serif;
+      width: 20%;
+    text-shadow: 3px 3px 5px brown;
+    
+    }
+
+    .form {
+      font-size: 30px;
+      width: 80%;
+      
+      form {
+        display: flex;
+        justify-content: space-around;
+        
+        .btgen{
+
+          input {
+            width: 300px;
+            height: 25px;
+            border-radius: 5px;
+            -webkit-appearance: none;      /* to remove up and down arrow in safari,chrome,etc */
+            -moz-appearance: textfield;   /* to remove up and down arrow in mozilla firefox */
+          }
+          button{
+            margin: 3px;
+            width: 25px;
+            height: 25px;
+
+          }
+        } 
+        
+        .btspeed input,
+        .btsize input {
+          font-size: 17px;
+          width: 45px;
+          height: 25px;
+          /* border: none; */
+          border-radius: 5px;
+          background-color: none;
+        }
+        
+      }
+    }
+  }
+
+  .content {
+
+    /* border:5px red solid; */
+    border-radius: 20px;
+    /* margin-right: 10px;
+    margin-left: 10px; */
+    margin-top: 20px;
+    margin-bottom: 10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    box-shadow: 10px 10px 10px rgb(222, 222, 234),-10px -10px 10px rgb(222, 222, 234),-10px 10px 10px rgb(222, 222, 234),10px -10px 10px rgb(222, 222, 234);
+    font-size: 20px;
+    display: flex;
+    justify-content: space-between;
+    
+    background: url(tex5.jpg) no-repeat ;
+    background-color: rgba(200, 203, 188, 0.529);
+     /* White overlay with 50% transparency */
+    background-blend-mode: overlay;    
+    background-size:cover;
+
+    align-items: center;
+    height: 70vh;
+    width: 95%;
+    
+    .diagram {
+      
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      height: 100%;
+      width: 70%;
+      margin: 20px;
+      
+      .diag{
+        
+        padding-top: 10px;
+        height: 85%;
+        width: 100%;
+        display: flex;
+        align-items: flex-end;
+        padding-bottom: 7px;
+        padding-left: 5px;
+        padding-right: 20px;
+        gap: 20px;
+        border-bottom:5px orange solid;
+        justify-content: space-around;
+        overflow: hidden;
+        
+        .barback{
+          position: relative;
+          align-content: end;
+          /* z-index: 0; */
+          /* background: url(mainback.jpeg); */
+          /* -webkit-background-composite: border; */
+          background-color: rgba(241, 213, 213,0.4);
+          border-radius: 10px;
+          /* border: 2px green solid; */
+          box-shadow: 10px 0px 12px rgb(175, 53, 53);
+          
+          
+          .bar{
+            position:absolute;
+            
+            /* top: 0; */
+            bottom: -5px;
+            left: -8px;
+            border-top-left-radius: 20px;
+            border-top-right-radius: 20px;
+            /* background-color: #cbeb3dcc; */
+            box-shadow: 14px -5px 15px  red;
+            /* z-index: 1; */
+            width: 100%;
+            text-align: center;
+            align-content: center;
+            overflow: hidden;
+          }
+        }
+      }
+
+      .init{
+        height: 15%;
+        width: 100%;
+
+        button{
+          width: 100px;
+          border-radius: 10px;
+          box-shadow: 5px 5px 10px green ;
+          height: 40px;
+          font-size: 25px;
+          text-align:center;
+          
+          margin: 20px;
+          align-content: center;
+        }
+        button:hover{
+          cursor: pointer;
+          background-color: rgba(194, 234, 100,0);
+          text-shadow: 3px 3px 0px greenyellow,-10px 10px 20px greenyellow,-10px -10px 20px greenyellow,10px -10px 20px greenyellow;
+          
+          box-shadow: none;
+          outline: none;
+          border: none;
+          /* scale:1.5rem ; */
+        }
+        button:active{
+          box-shadow: 5px 5px 10px rgb(12, 99, 12) ;
+          /* background-color: yellowgreen; */
+          /* border: 2px solid green; */
+        }
+      }
+    }
+    
+    .sort {
+      width: 20%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      /* gap: 10px; */
+      justify-content: space-around;
+      align-items: end;
+      padding: 20px;
+
+      
+      .btsort {
+        background-color: rgb(232, 237, 177);
+        box-shadow: 8px 8px 15px green;
+        height: 60px;
+        width: 200px;
+        border-radius: 10px;
+        padding: 10px;
+        font-size: xx-large;
+        border: none;
+        padding: 0;
+        margin: 0;
+        cursor: pointer;
+      }
+      .btsort:hover{
+        cursor: pointer;
+        background:none;
+        text-shadow: 4px 4px 0px greenyellow,-10px 10px 20px greenyellow,-10px -10px 20px greenyellow,10px -10px 20px greenyellow;
+        
+        box-shadow: none;
+        outline: none;
+        border: none;
+      }
+      .btsort:active{
+        
+        box-shadow: 5px 5px 10px rgb(172, 172, 100),-5px 5px 10px rgb(172, 172, 100),-5px -5px 10px rgb(172, 172, 100),5px -5px 10px rgb(172, 172, 100) ;
+        /* background-color: yellowgreen; */
+      }
+    }
+    
+    
+  }
+
+  .bottom {
+    /* border: 3px blue solid; */
+
+    margin-top: 30px;
+    margin-bottom: 30px;
+
+    margin-top: 50px;
+    height: 600px;
+    width: 95%;
+    /* border-radius: 20px; */
+    
+    font-size: 20px;
+    display: flex;
+    justify-content: space-between;
+    /* flex-direction:column; */
+    /* align-items: center; */
+    
+    .code {
+      font-weight: 600;
+
+      border-radius: 20px;
+      /* background-color:bisque; */
+      /* border: 2px hotpink solid; */
+
+      background: url(./backg.webp) no-repeat ;
+      background-color: rgba(255, 255, 255, 0.5);
+       /* White overlay with 50% transparency */
+      background-blend-mode: overlay;    
+      background-size:cover;
+
+      height: 100%;
+      width: 70%;
+      overflow: scroll;
+      
+      h1{
+        margin-top: 20px;
+        position: sticky;
+        top: 0;
+        background-color: aliceblue;
+        
+        button{
+          position: absolute;
+          top: 50%;
+          right: 10px;
+          height: 28px;
+          width: 80px;
+          /* background-color:aquamarine; */
+          box-shadow: 2px 2px 5px green;
+          border-radius: 10px;
+          transform: translateY(-50%);
+        }
+      }
+      
+      pre{
+        padding-left: 10px;
+        text-align: left;
+      }
+      /* text-align: left; */
+      
+    }
+
+    
+    .complexity {
+      
+      height: 100%;
+      width: 29%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      
+      .spacecom,
+      .timecom {
+
+        background: url(./backg.webp) no-repeat ;
+        background-color: rgba(255, 255, 255, 0.5);
+         /* White overlay with 50% transparency */
+        background-blend-mode: overlay;    
+        background-size:cover;
+        border-radius: 20px;
+        /* background-color: bisque; */
+        height: 48.5%;
+        
+        H1{
+          margin-top: 20px;
+
+          text-align: center;
+          background-color: aliceblue;
+        }
+        
+        pre{
+          text-align: left;
+        padding-left: 10px;
+        font-size: 30px;
+      }
+      
+    }
+
+  }
+  }
+margin: 0%;
+padding: 0%;
+
+}
